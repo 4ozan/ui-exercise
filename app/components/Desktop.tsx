@@ -42,8 +42,8 @@ export function DesktopNav() {
     <div className="flex flex-col items-center text-center">
       <nav className="flex justify-center font-bold tracking-tighter text-sm md:text-[2rem] w-auto h-auto rounded-lg">
         <ul className="flex flex-row gap-2 md:gap-4 justify-center bg-[#585252] text-white items-center rounded-2xl font-mono bg-fixed p-[3px] md:p-[5px] transition-all duration-300">
-          {links.map((link) => (
-            <li key={link.href} className="group flex">
+          {links.map((link, index) => (
+            <li key={index} className="group flex">
               <a
                 href={link.href}
                 target="_blank"
